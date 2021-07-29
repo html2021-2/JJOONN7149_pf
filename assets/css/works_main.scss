@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "_var", "_mixin", "_function";
+
+#contentArea{
+  height: vw-calc1920(672);
+  #mainSlider{
+    width: 100%;height: 100%;
+    .slide{
+      width: 25%;background: rgba(128, 128, 128, 0.281);height: vw-calc1920(672);position: relative;
+      p{
+        position: absolute;bottom: 5%;right: 50%;font-size: vw-calc1920(30);color: #000;
+      }
+    }
+  }
+  h2{
+    position: absolute;z-index: 200;
+  }
+}
+#footer{
+  position: absolute;bottom: 0;left: 0;
+}

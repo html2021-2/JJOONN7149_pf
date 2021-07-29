@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "_var", "_mixin", "_function";
+#contentArea{
+    #eyeimg{
+        width: vw-calc1920(900);height: vw-calc1920(285);background: #777;position: absolute;left:vw-calc1920(440);top:  vw-calc1920(227.5);
+
+    }
+    .maintxt{
+        font-size:  vw-calc1920(45);position: absolute;z-index: 200;margin-top: vw-calc1920(20);font-weight: 400;  cursor: default;
+        p:nth-child(1){
+            text-align: left;
+            strong{
+                font-size:  vw-calc1920(70);
+            }
+        }
+        p:nth-child(2){
+            margin-top: vw-calc1920(40);
+        }
+        p:nth-child(3){
+            margin-top: vw-calc1920(40);text-align: center;
+        }
+        p:nth-child(4){
+            margin-top: vw-calc1920(40);text-align: center;
+        }
+        a:hover, a:focus{
+            font-weight: 700;
+        }
+    }
+}
+

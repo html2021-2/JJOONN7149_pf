@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "_var", "_mixin", "_function";
+body{
+  width: vw-calc1920(1920);height: 100%;background: url(../images/common/background.jpg);display: flex;flex-direction: column;
+}
+#header{
+  margin-top: 0;position: relative;
+  #gnb{
+    ul{
+      display: flex;width:   vw-calc1920(800);height:  vw-calc1920(27);justify-content: space-between;margin:  vw-calc1920(25) auto 0;
+      li{
+        position: relative;flex-shrink:1; /* todo: gnb손보기 */         
+      }
+      a:focus, a:hover {
+        text-decoration: underline;
+      }
+      .language{
+        font-size: vw-calc1920(15);height: vw-calc1920(20);padding-top: vw-calc1920(5);cursor: default;
+        a{
+          cursor: pointer;
+        }
+        a:first-child{
+          margin-right:vw-calc1920(9);
+        }        
+        a:nth-child(2){
+          margin-left:vw-calc1920(5);
+        }        
+      }
+    }
+  }
+  .close_wrap{top: vw-calc1920(18); right: vw-calc1920(18);height: vw-calc1920(62);position: absolute;z-index: 200;width:  vw-calc1920(400); display: flex;flex-direction: row-reverse; border: 1px solid #000;
+    #close {
+      width: vw-calc1920(34);height: vw-calc1920(48);background: url(../images/common/exitdoor_closed.png);background-size:cover;top: 0;right: 0;position: relative;
+        /*  &::after{
+        content: "";position: absolute;width: vw-calc1920(44);height: vw-calc1920(62);background: url(../images/common/exit_mo_icon.png);background-size: contain;top: 0;right: 0;
+      } */
+    }
+    .leavetxt{
+      font-size: vw-calc1920(35);color: red; height: 100%;margin-right:  vw-calc1920(28);height: vw-calc1920(48)
+    }
+  }
+}
+#contentArea{
+  height: vw-calc1920(740);position: relative;border: 1px solid green;margin: vw-calc1920(70);
+
+}
+#footer {
+  position: absolute;left: 1%;bottom: 2%;
+}

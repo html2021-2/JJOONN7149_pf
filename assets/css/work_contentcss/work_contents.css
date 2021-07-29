@@ -1,0 +1,92 @@
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes popin {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@-ms-keyframes popin {
+  0% {
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes popin {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+#workContentArea h3 {
+  writing-mode: vertical-rl;
+  font-size: 3.125vw;
+  letter-spacing: 0.5208333333vw;
+  margin: 1.5625vw 0.5208333333vw; }
+#workContentArea #bigPic {
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+#workContentArea #navPic {
+  width: 14.5833333333vw;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  right: 0vw;
+  height: 100%;
+  margin: auto; }
+  #workContentArea #navPic .nav {
+    height: 8.59375vw;
+    margin: 0.3541666667vw 0;
+    margin-right: 0.7083333333vw; }
+#workContentArea #tab1, #workContentArea #nav1 {
+  background: #ff9f9f; }
+#workContentArea #tab2, #workContentArea #nav2 {
+  background: #9fffa7; }
+#workContentArea #tab3, #workContentArea #nav3 {
+  background: #9fffff; }
+#workContentArea #tab4, #workContentArea #nav4 {
+  background: #a69fff; }
+#workContentArea #tab5, #workContentArea #nav5 {
+  background: #ff9f9f; }
+
+/*# sourceMappingURL=work_contents.css.map */

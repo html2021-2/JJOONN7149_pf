@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> works 상세내용 </title>
+  <link rel="stylesheet" href="../assets/css/layout.css"><!-- 전체적인 레이아웃 -->
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fgh0pvc.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/work_contentcss/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/work_contentcss/slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/work_contentcss/work_contents.css">
+
+</head>
+<body>    
+  <header id="header" class="blind">
+    <div id="headerWrap">
+      <div class="close_wrap">
+        <button id="close"></button><!-- 배경에 사진 넣기 -->
+        <p class="leavetxt blind">LEAVE THIS SITE?</p>
+      </div>
+      <div id="navwrap">
+        <nav id="gnb">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sub/works_main.html">WORKS</a></li>
+            <li><a href="sub/aboutme.html">ABOUT ME</a></li>
+            <li><a href="sub/getintouch.html">GET IN TOUCH</a></li>
+            <li class="language">
+              <a href="">ENG</a>
+              <a href="">KOR</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+    <section class="contentslider" id="workContentArea">
+      <h3><a href="" >WORKS</a></h3>
+      <div class="slider-for" id="bigPic">
+        <div class="tab" id="tab1">tab1</div>
+        <div class="tab" id="tab2">tab2</div>
+        <div class="tab" id="tab3">tab3</div>
+        <div class="tab" id="tab4">tab4</div>
+        <div class="tab" id="tab5">tab5</div>
+      </div>
+      <div class="slider-nav" id="navPic">
+        <div class="nav" id="nav1">nav1</div>
+        <div class="nav" id="nav2">nav2</div>
+        <div class="nav" id="nav3">nav3</div>
+        <div class="nav" id="nav4">nav4</div>
+        <div class="nav" id="nav5">nav5</div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.2.0.js"
+  integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ="
+  crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="../assets/js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $('.slider-for').slick({
+          autoplay:false, //자동슬라이드
+          slidesToShow: 1, //큰이미지 몇개 보여줄것인지
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav',
+       });
+       $('.slider-nav').slick({
+          slidesToShow: 5, //작은이미지 몇개 보여줄것인지..
+          slidesToScroll:1,
+          asNavFor: '.slider-for',
+          focusOnSelect: true,
+          vertical: true,
+          infinite: true,
+          draggable:true,
+          adaptiveHeight: true,
+          centerPadding:true
+       });
+    });
+ </script> 
+</body>
+</html>

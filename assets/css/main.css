@@ -1,0 +1,87 @@
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes popin {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@-ms-keyframes popin {
+  0% {
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes popin {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+  85% {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+#contentArea #eyeimg {
+  width: 46.875vw;
+  height: 14.84375vw;
+  background: #777;
+  position: absolute;
+  left: 22.9166666667vw;
+  top: 11.8489583333vw; }
+#contentArea .maintxt {
+  font-size: 2.34375vw;
+  position: absolute;
+  z-index: 200;
+  margin-top: 1.0416666667vw;
+  font-weight: 400;
+  cursor: default; }
+  #contentArea .maintxt p:nth-child(1) {
+    text-align: left; }
+    #contentArea .maintxt p:nth-child(1) strong {
+      font-size: 3.6458333333vw; }
+  #contentArea .maintxt p:nth-child(2) {
+    margin-top: 2.0833333333vw; }
+  #contentArea .maintxt p:nth-child(3) {
+    margin-top: 2.0833333333vw;
+    text-align: center; }
+  #contentArea .maintxt p:nth-child(4) {
+    margin-top: 2.0833333333vw;
+    text-align: center; }
+  #contentArea .maintxt a:hover, #contentArea .maintxt a:focus {
+    font-weight: 700; }
+
+/*# sourceMappingURL=main.css.map */

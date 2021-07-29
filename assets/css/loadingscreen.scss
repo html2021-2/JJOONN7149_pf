@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import "_var", "_mixin", "_function";
+
+body{
+	background-color: #222;
+
+}
+
+#door_preloader{
+	
+	height: 100%;width: 100%;
+
+}
+
+#door {
+	background-color: #222;
+}
+
+
+#jamb {
+	background-color: #fff;
+}
+
+
+
+#jamb {
+	// border: 1px solid red;
+	top: 30px;
+	left: 30px;
+	position: absolute;
+	margin: auto;
+	height:90%;
+	width:90%;
+	overflow: hidden;
+	transition: all .2s ease-in;
+	
+	&:hover {
+		transition: all .2s ease-in;
+		background-color: #fff;
+		
+	}   
+	.side {
+		//todo 왜ㅐㅐㅐ 선이 안보이지
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
+	#side1 {
+		right: 0;
+		bottom: 0;
+		animation: drawSide1 .5s ease-in-out forwards;
+		z-index: 10;
+	}
+	#side2 {
+		right: 0;
+		top: 0;
+		animation: drawSide2 .5s ease-in-out .5s forwards;
+		z-index: 10;
+	}
+	#side3 {
+		left: 0;
+		top: 0;
+		animation: drawSide3 .5s ease-in-out 1s forwards;
+		z-index: 10;
+	}
+	#side4 {
+		left: 0;
+		bottom: 0;
+		animation: drawSide4 .5s ease-in-out 1.5s forwards;
+		z-index: 10;
+	}
+	#door {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform-origin: 100% 50%;
+		cursor: pointer;
+		.text_wrap{
+			position: absolute;
+			top: 40%;left: 10%;z-index: 100;
+			color: #fff;opacity: 0;
+			transform: perspective(30vw) rotateY(-1deg);
+			-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;z-index: 200;
+		}
+	
+	}
+	#door:hover {
+		.text_wrap{
+			opacity: 100%;
+		}
+	}
+
+
+.crack {
+	animation: crack .2s cubic-bezier(.46, .59, .53, 1) 2.5s forwards;
+}
+
+.open {
+	animation: crackopen 4s  forwards;
+}
+//todo: 왜 중간에 멈추는지 모르겠음
+
+.spread {
+	animation: spread .5s  forwards;
+}
+//todo: 왜 중간에 멈추는지 모르겠음
+
+
+
+@keyframes dark-glow {
+	to {
+		box-shadow:  0 0 .5vw 0 rgba(168, 73, 73, 0.5);
+	}
+}
+
+@keyframes crack {
+	to {
+		background-color: #222;
+		box-shadow: 0 0 0 .2vh .1vw;
+		transform: perspective(30vw) rotateY(-1deg);
+	}
+}
+
+@keyframes crackopen {
+	from {
+		transform: perspective(15vw) rotateY(-.5deg);
+	}
+	to {
+		transform: perspective(15vw) rotateY(-90deg);
+	}
+}
+
+@keyframes spread {
+	0% {
+		margin: -30px;
+		height: 100%;width: 100%;
+	}
+	100% {
+		opacity: 70%;
+		top: 0;
+		left: 0;
+		height:100%;
+		width: 100%;
+	}
+}
+//todo: spread 안먹힘
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes drawSide1 {
+	from {
+		width: .1vw;
+		height: 0;
+	}
+	to {
+		width: .1vw;
+		height: 100%;
+	}
+}
+
+
+@keyframes drawSide2 {
+	from {
+		height: .1vw;
+		width: 0;
+	}
+	to {
+		height: .1vw;
+		width: 100%;
+	}
+}
+
+@keyframes drawSide3 {
+	from {
+		height: 0;
+		width: .1vw;
+	}
+	to {
+		height: 100%;
+		width: .1vw;
+		bottom: 0;
+	}
+}
+
+@keyframes drawSide4 {
+	from {
+		height: .1vw;
+		width: 0;
+	}
+	to {
+		height: .1vw;
+		width: 100%;
+	}
+}
+}

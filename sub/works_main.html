@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> works 메인화면 </title>
+  <link rel="stylesheet" href="../assets/css/layout.css"><!-- 전체적인 레이아웃 -->
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/works_main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/fgh0pvc.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css//slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css//slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/works_main.css">
+</head>
+<body>
+  <header id="header">
+    <div class="close_wrap">
+      <button id="close"></button><!-- 배경에 사진 넣기 -->
+      <p class="leavetxt blind">LEAVE THIS SITE?</p>
+    </div>
+    <div id="navwrap">
+      <nav id="gnb">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="sub/works_main.html">WORKS</a></li>
+          <li><a href="sub/aboutme.html">ABOUT ME</a></li>
+          <li><a href="sub/getintouch.html">GET IN TOUCH</a></li>
+          <li class="language">
+            <a href="">ENG</a>
+            <a href="">KOR</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="contentArea">
+    <h2>WORKS</h2>
+   <div class="autoplay" id="mainSlider">
+     <a href="" class="slide"><div><p>01</p></div></a>
+     <a href="" class="slide"><div><p>02</p></div></a>
+     <a href="" class="slide"><div><p>03</p></div></a>
+     <a href="" class="slide"><div><p>04</p></div></a>
+     <a href="" class="slide"><div><p>05</p></div></a>
+     <a href="" class="slide"><div><p>06</p></div></a>
+   </div>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.2.0.js"
+  integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ="
+  crossorigin="anonymous"></script>  
+  <script type="text/javascript" src="../assets/js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.autoplay').slick({
+       slidesToShow: 4,
+       slidesToScroll: 1,
+       autoplay: true,
+       autoplaySpeed: 2000,
+       dots: false
+      })
+    });
+ </script> 
+<footer id="footer">
+    <p>ⓒ 2021 HAIJUNKO ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+</html>

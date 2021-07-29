@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import "_var", "_mixin", "_function";
+
+#contentArea{
+  position: relative;
+  #scrollbar{   
+    cursor: n-resize;
+    width: vw-calc1920(920);
+    height:  vw-calc1920(300);
+    position: absolute;
+    top: vw-calc1920(70);
+    right: vw-calc1920(150);
+
+    color: #222;    
+    .wrapper {
+      border: 1px solid red;
+      display: flex;
+      z-index: 1;
+      height: 100%;
+      overflow-y:auto;
+      overflow-x:hidden;
+      transform-origin:right top;
+      display:block;
+      
+      .item {
+        border: 1px solid green;
+        padding:  vw-calc1920(50);
+        height:  100%;   
+        width: 100%;     
+        align-items: center;
+        font-size:vw-calc1920(37);
+        line-height: 1.1; 
+        user-select: none;
+        &:nth-child(2){
+          padding-top: 0 !important; padding-bottom: 0 !important;
+          height:  80%;   
+        }
+        
+      }
+    }   
+  } 
+  .mypic{
+    position: absolute;
+    top:  0;
+    left:  vw-calc1920(150);
+    width: vw-calc1920(605);
+    height: 100%;;
+    background-color: #777;
+  }  
+}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+div{
+  box-sizing:border-box;
+}
+#shortcut {
+  border: 1px solid #000;
+  position: absolute;
+  top: vw-calc1920(370);
+  left: vw-calc1920(800);
+  width:vw-calc1920(825);
+  .link_wrap{
+    margin-top: vw-calc1920(40);
+    &:nth-child(2) {
+      margin-left:vw-calc1920(227);
+    }
+    .link {
+      font-size: vw-calc1920(70);font-weight: 700;
+      margin-top: vw-calc1920(5);position: relative;border: 1px solid #000;
+      &::before {content: "";
+        height: vw-calc1920(10); background-color: #000;width:  100%;left: 0;position: absolute;top: 0;width: 100%;
+      }
+      &::after {content: "";
+        height: vw-calc1920(10); background-color: #000;width:  100%;left: 0;position: absolute;top: 105%;width: 100%;
+      }
+    }
+    #contactme {
+      width: vw-calc1920(700);padding-left: vw-calc1920(30);
+    }
+  
+
+  }
+  
+  
+  
+}
